@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+		<meta charset="utf-8">
+		<title>Natural Language Processing</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/test.css" rel="stylesheet">
+		<link href="assets/css/tree2.css" rel="stylesheet">
+</head>
+	
+	
+<body>
+
+	<!-- begin wrap -->		
+	<div id="wrap">
+	  
+	  <!-- begin nav -->
+<!-- 	  <div class="navbar navbar-default navbar-fixed-top">
+	      
+			<div class="navbar-header">
+			   <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse-main">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	         </button>
+				<a class="navbar-brand" href="#">CME151</a>
+		  	</div>
+
+		  	<div class="navbar-collapse navbar-collapse-main collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#info">Information</a></li>
+					</ul>
+				</div>
+	  </div> -->
+	  <!-- end nav -->
+	  
+	  <!-- begin container -->
+
+		<div class="container">
+
+
+
+			<!-- begin content -->
+			<div id="content">
+
+				<!-- begin row -->
+				<div class="row">
+
+					<!-- begin header -->
+					<div class=".col-xs-12 .col-md-8">
+						<h1>Deep Learning for NLP using Recurrent Neural Networks</h1>
+						<h4><a href="https://www.linkedin.com/profile/view?id=209349490&authType=NAME_SEARCH&authToken=ie5H&locale=de_DE&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2Cidx%3A1-5-5%2CtarId%3A1433791281241%2Ctas%3Ayou">Youssef Ahres</a> and <a href="https://www.linkedin.com/profile/view?id=127814705&authType=NAME_SEARCH&authToken=S-t7&locale=de_DE&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2Cidx%3A1-1-1%2CtarId%3A1433791364837%2Ctas%3Anikolaus">Nikolaus Volk</a></h4>
+
+
+						<h6> Stanford Graduate Students - Machine Learning, Deep Learning, NLP, Optimization <small>Stanford CS224D - Spring 2015</small></h6>
+						<h3>Project: Aspect Specific Sentiment Analysis of Web Reviews</h3>
+						<hr>Requests please to {yahres,nvolk}at{stanford.edu}</hr>
+						<hr>[Abstract] Aspect specific sentiment analysis for reviews is a subtask of ordinary sentiment analysis with increasing polularity. In this work, the goal is to characterize the sentiment of specific aspects in camera web reviews with various recurrent neural networks that are tailored to this purpose to predict a vector of aspect sentiments at review level: The baseline of a simple RNN is extended to a bidirectional RNN (BRNN), an LSTM and a bidirectional LSTM (BLSTM). Furthermore, different methods are presented and evaluated how to deal with highly biased/skewed data which is a common problem with reviews. In particular, a novel approach using aspect information content increasing mini-batch sampling is presented. Models are evaluated using F1 scores.</hr>
+						<hr>
+					</div>
+					
+					<!-- end header -->
+
+					<!-- begin viz 1 -->
+					<!--
+					<div class=".col-xs-12 .col-md-8">
+						<h3>Visualization on ABC</h3>
+						<p>In this visualization, I wanted to display a, b, and c. </p>
+						<canvas id="viz_1"></canvas>
+						<hr>
+					</div>
+					-->
+					<!-- end viz 1 -->
+				<!-- begin viz 1 -->
+				
+						<h4> Model Overview </h4>
+						<hr>We implemented the following model structure in Python, using Theano for LSTMs and Bidirectional LSTMs (BLSTMs). Source code as well as data files are provided upon request. Clicking on the nodes will result in our sub-models with respective (macro) F1-scores. </hr>
+					     <div id='tree-container'></div>
+					    
+					    <h4>Results: A concise table</h4>
+					    <hr>The goal is to summarize product reviews in a useful yet concise table, where shoppers can easily sort according to their specific needs. A comparison of the models should be performed here. </hr>
+					    <div id="tableview"></div>
+					    <hr> 
+					    
+					    
+					    <h4>Model training (1): RNN Learning curves over epochs</h4>
+					     <hr>The models are trained using a training set of appr. 70% of our entire data (appr. 7000 reviews). </hr>
+					    <div id="learning_curves"></div>
+					    <hr> 
+					    
+					    <h4>Model training (2): LSTM Learning curves over epochs</h4>
+					    <div id="learning_curves_lstm"></div>
+					   
+
+					    <h4>Model performance</h4>
+					    <hr>We used confusion matrices to visualize our model performance. Diagonal entries reflect correct classifications, off-diagonal entries reflect wrong classifications. </hr>
+					    <div id="heatmap"></div>
+
+					    <hr>We would be more than happy to provide you with more insights about our research and have a chat about other existing opportunities. </hr>
+					    <hr>
+
+
+					    
+					
+<!-- end viz 1 -->	
+
+
+
+					<!-- begin viz 2 
+					<div class=".col-xs-12 .col-md-8">
+						<h3>Visualization on XYZ</h3>
+						<p>In this visualization, I wanted to display x, y, z. </p>
+						<canvas id="viz_2"></canvas>
+						<hr>
+					</div>
+					<! end viz 2 -->
+
+				</div>
+				<!-- end row -->
+
+			</div> 
+			<!-- end content -->
+
+		</div>
+		<!-- end container -->
+
+	
+	<!-- end wrap -->	
+
+	<!-- begin footer -->
+	<div id="footer">
+	  <div class="container">
+			<p class="text-muted credit"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="assets/images/cc_80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">This Portfolio</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+	  </div>
+	</div>
+	<!-- end footer -->
+
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.js'></script>
+	<script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src='assets/js/learning_curves.js'></script>
+	<script src='assets/js/learning_curves_lstm.js'></script>
+	<script src='assets/js/dndTree2.js'></script>
+	<script src='assets/js/tableview.js'></script>
+	<script src='assets/js/heatmap.js'></script>
+	
+</body>
+</html>
